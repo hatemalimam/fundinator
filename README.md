@@ -7,7 +7,7 @@
 
 ### Built using
 ***
-AngularJS 1.6.3, ES6, SASS, and Loader Spec. 
+AngularJS 1.6.x, ES6, Webpack, SASS, and Loader Spec. 
 
 ### Quick start
 ***
