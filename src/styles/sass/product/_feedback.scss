@@ -1,0 +1,17 @@
+.feedback-giver-container {
+    border: 1px solid #dadada;
+    border-top: none;        
+    overflow: hidden;
+    width: 100%;
+
+    .product-feedback {    
+        p {
+            margin: 1.4em; 
+            color: #7b716e;                    
+            span {
+                color: #dc5937; 
+            }
+        }
+    }
+}
+

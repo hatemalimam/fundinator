@@ -1,0 +1,9 @@
+<div class="product-feedback">    
+    <p><strong><span>Only 3 days left</span></strong> to fund this project.</p>
+    <p ng-if="$ctrl.parent.productState.currentDoners > 0">
+        Join the <strong>{{$ctrl.parent.productState.currentDoners}}</strong> other doners who have donated <strong>${{$ctrl.parent.productState.currentDonation}}</strong>.
+    </p>
+    <p ng-if="$ctrl.parent.productState.currentDoners == 0">
+        Help in getting this project to life.
+    </p>
+</div>

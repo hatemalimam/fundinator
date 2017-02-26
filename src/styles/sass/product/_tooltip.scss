@@ -1,0 +1,28 @@
+
+.product-tooltip {
+    
+    .product-tooltip-content {
+        color: #FFFFFF;
+        background-color: #383737;
+        border-radius: 5px;               
+        margin-bottom: 20px;
+        position: relative;
+        text-align: center; 
+         line-height: 50px;
+        
+        &:after {
+            content: '';
+            border-color: #383737;
+            bottom: -11px;            
+            display: block;
+            height: 20px;
+            right: 20%;
+            position: absolute;            
+            transform: rotate(45deg);
+            border-width: 10px 14px 10px 0;
+            border-style: solid; 
+        }
+        
+    }
+    
+}

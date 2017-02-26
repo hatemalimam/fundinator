@@ -1,0 +1,55 @@
+@mixin background-color-transition($speed) {
+    -webkit-transition: background-color $speed ease-in-out;
+    transition: background-color $speed ease-in-out;
+}
+
+.giver {
+    padding: 0 20px 20px 20px; 
+
+    input, button {       
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 1.3em;
+        font-weight: bold;
+        line-height: 60px;
+        width: 100%; 
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    input {
+        margin-bottom: 20px;
+        border: 1px solid #dadada;               
+        color: #363721;
+        text-align: center; 
+    }
+
+    button {
+        background-color: #0bc511;
+        border: 0;        
+        color: #ffffff;
+        outline: 0;        
+        width: 100%;
+        @include background-color-transition(0.4s);
+
+        &:disabled {
+            background-color: #cbcccb;
+            opacity: 0.8; 
+        }
+    }
+
+    @media (min-width: 500px) {
+        input {
+            margin-bottom: 0;           
+            width: 45%; 
+            margin-right: 9%;
+        }
+        button {
+            width: 45%; 
+        } 
+    }
+}
+
+
+

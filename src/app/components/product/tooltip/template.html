@@ -1,0 +1,5 @@
+<div ng-if="$ctrl.parent.productState.currentDonation < $ctrl.parent.productState.goal" class="product-tooltip">
+    <div class="product-tooltip-content">
+        <strong>${{$ctrl.parent.productState.goal - $ctrl.parent.productState.currentDonation}}</strong> still needed for this project
+    </div>
+</div>

@@ -1,0 +1,6 @@
+<form name="giverForm" ng-submit="$ctrl.donate()">
+    <div class="giver">
+        <input name="donatedAmount" type="number" pattern="\d*" step="1" min="1" ng-model="$ctrl.donatedAmout" aria-label="Donation Amount" />
+        <button type="submit" ng-disabled="giverForm.donatedAmount.$invalid || giverForm.$pending || !$ctrl.donatedAmout" >Give Now</button>
+    </div>
+</form>

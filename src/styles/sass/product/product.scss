@@ -1,0 +1,34 @@
+
+@mixin center-block() {
+    margin: 0 auto;
+}
+
+.product {
+    @include center-block();
+    max-width: 550px;
+    min-width: 300px;    
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%; 
+
+    .product-info {        
+        img {
+            height: auto;
+            width: 100%;             
+        }
+
+        h2 {
+            color: #8e827f;
+            font-weight: normal;
+            text-align: center; 
+            font-size: 1.3em;
+            font-style: italic;            
+        }
+    }
+}
+
+
+@import "_tooltip.scss";
+@import "_progress-bar.scss";
+@import "_feedback.scss";
+@import "_giver.scss";

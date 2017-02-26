@@ -1,0 +1,16 @@
+@mixin progress-transition($speed) {
+    -webkit-transition: all $speed ease-in-out;
+    transition: all $speed ease-in-out; 
+}
+
+.product-progress-bar {
+    background-color: #f7f7f7;    
+    height: 15px;
+    border: 1px solid #dadada;    
+    width: 100%; 
+
+    .progress-bar {
+        height: 15px;
+        @include progress-transition(0.80s);
+    }
+}
